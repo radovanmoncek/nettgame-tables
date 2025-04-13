@@ -1,10 +1,12 @@
 //Thanks to: https://flatbuffers.dev/tutorial/
 
-namespace cz.radovanmoncek.ship.tables;
+namespace cz.radovanmoncek.nettgame.tables;
 
 enum GameStatus:byte {START_SESSION, STOP_SESSION, JOIN_SESSION, STATE_CHANGE, INVALID_STATE}
 
 enum Character:byte {BLUE, RED}
+
+enum AnimationState:byte {IDLE, WALK, DEATH}
 
 struct Position {
     x:float;
@@ -17,6 +19,8 @@ table Player {
     position:Position;
     name:string;
     character:Character;
+    bullet:Position;
+    animationState:AnimationState;
 }
 
 ///Game metadata
