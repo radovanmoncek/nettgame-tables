@@ -14,12 +14,14 @@ a nettgame client or server, it provides next to no functionality of its own.
 
 #### Dependencies
 
+```xml
 <!-- https://mvnrepository.com/artifact/com.google.flatbuffers/flatbuffers-java -->
 <dependency>
     <groupId>com.google.flatbuffers</groupId>
     <artifactId>flatbuffers-java</artifactId>
     <version>25.2.10</version>
 </dependency>
+```
 
 #### References
 
